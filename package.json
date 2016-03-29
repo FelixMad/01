@@ -4,7 +4,6 @@
   "main": "gulpfile.js",
   "dependencies": {
     "gulp-csslint": "^0.2.2",
-    "gulp-git": "^1.7.0",
     "gulp-html-prettify": "0.0.1",
     "gulp-htmlhint": "^0.3.1",
     "gulp-inline-css": "^3.1.0",
