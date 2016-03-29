@@ -4,13 +4,9 @@ var gulp      = require('gulp'),
 	 inlineCss = require('gulp-inline-css'),
 	 sass      = require('gulp-sass'),
 	 csslint   = require('gulp-csslint'),
-<<<<<<< HEAD
      htmlhint  = require("gulp-htmlhint"),
 	 prettify  = require('gulp-html-prettify'),
-=======
 	 git       = require('gulp-git'),
-	 //prettify  = require('gulp-html-prettify'),
->>>>>>> 1299479a28355c9e6bb5a92df1d829c65e30c81f
 	 $build    = "build",
 	 $src      = "source",
 	 $port     = 3006;
@@ -19,7 +15,6 @@ var gulp      = require('gulp'),
 gulp.task('default',function(){
 	gulp.watch( $src + '/css/*.css',['css']);
 	gulp.watch( $src + '/scss/*.scss',['sass']);
-<<<<<<< HEAD
 	gulp.watch( $src + '/*.html',['html']);
 });
 
@@ -27,18 +22,14 @@ gulp.task('css', function() {
     gulp.src($src +'/scss/*.scss')
 		.pipe(sass().on('error',sass.logError))
 		.pipe(gulp.dest($src +'/css'));
-=======
-	//gulp.watch( $src + '/*.html',['htmlprettify']);
 });
 
 gulp.task('css', function() {
->>>>>>> 1299479a28355c9e6bb5a92df1d829c65e30c81f
 	gulp.src($src + '/css/*.css')
 		.pipe(csslint())
 		.pipe(csslint.reporter());
 });
 
-<<<<<<< HEAD
 gulp.task('css:watch', function(){
 	gulp.watch( $src +'/scss/*.scss' ,['sass']);
   	gulp.watch( $src + '/css/*.css' ,['csslint']);  
@@ -82,10 +73,6 @@ gulp.task('htmlhint', function() {
 	gulp.src($src + '/*.html')
 		.pipe(htmlhint())
 });
-=======
-
->>>>>>> 1299479a28355c9e6bb5a92df1d829c65e30c81f
-
 
 gulp.task('server', function() {
 	var server = gls.static($build, $port);
@@ -98,18 +85,6 @@ gulp.task('server', function() {
 
 });
 
-<<<<<<< HEAD
-=======
-gulp.task('commit', function(){
-  return gulp.src('README.md')
-    .pipe(git.commit({args: '-m "second commit"'}));
-});
-
-gulp.task('add', function(){
-  return gulp.src('login.html')
-		.pipe(git.add());
-});
->>>>>>> 1299479a28355c9e6bb5a92df1d829c65e30c81f
 
 gulp.task('inlinecss', function() {
 	return gulp.src($src + '/*.html')
@@ -123,7 +98,7 @@ gulp.task('inlinecss', function() {
 		.pipe(gulp.dest($build));
 });
 
-<<<<<<< HEAD
+
 
 
 
