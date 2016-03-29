@@ -98,12 +98,6 @@ gulp.task('inlinecss', function() {
 		.pipe(gulp.dest($build));
 });
 
-
-
-
-
-
-=======
 gulp.task('htmlprettify', function() {
 	return gulp.src($src + '/*.html')
 		.pipe(prettify({indent_char: '  ', indent_size: 1}))
@@ -119,4 +113,3 @@ gulp.task('sass', function(){
 gulp.task('sass:watch', function(){
 	gulp.watch($src + '/scss/*.scss',['sass']);
 });
->>>>>>> 1299479a28355c9e6bb5a92df1d829c65e30c81f
