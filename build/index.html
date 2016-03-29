@@ -1,0 +1,237 @@
+<html xml:lang="es" lang="es">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/skin-blue.css">
+</head>
+
+<body class="skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>M</b>a</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Manhattan</b></span>
+      </a>
+
+      <!-- Header Navbar -->
+      <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <!-- Navbar Right Menu -->
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.php?controller=login&amp;action=salir"><i class="fa fa-sign-out"></i> <span>Desconectar</span></a>
+            </li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          </ul>
+        </div>
+
+
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel user-panel-white">
+          <p>(admin@wktheca.com)</p>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu">
+          <li class="header">MENÚ PRINCIPAL</li>
+          <!-- Optionally, you can add icons to the links -->
+          <li class=""><a href="/"><i class="fa fa-home"></i> <span>Inicio</span></a>
+          </li>
+          <li class="active"><a href="./index.php?controller=grupos&amp;action=listar"><i class="fa fa-briefcase"></i> <span>Grupo de empresas</span></a>
+          </li>
+          <li class=""><a href="./index.php?controller=planContableBase&amp;action=ver"><i class="fa fa-book"></i> <span>Plan Contable Base</span></a>
+          </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <div class="content-wrapper" style="min-height: 745px;">
+      <section class="content-header">
+        <h1>
+      Grupos de empresas
+      <small>Listado</small>
+    </h1>
+        <ol class="breadcrumb">
+          <li><a href="/"><i class="fa fa-dashboard"></i> Inicio</a>
+          </li>
+          <li class="active">Grupos de empresas</li>
+        </ol>
+      </section>
+
+      <section class="content">
+
+        <div class="box">
+          <div class="box-header with-border">
+            <h3 class="box-title"><i class="fa fa-briefcase"></i> Listado</h3>
+            <button class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#nombreGrupo">
+              <i class="fa fa-plus-circle"></i>
+              Añadir ahora
+            </button>
+          </div>
+          <div class="box-body">
+
+            <div id="listadoDeGrupos_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="dataTables_length" id="listadoDeGrupos_length">
+                    <label>Ver
+                      <select name="listadoDeGrupos_length" aria-controls="listadoDeGrupos" class="form-control input-sm">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                      </select>registros por página</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="listadoDeGrupos_filter" class="dataTables_filter">
+                    <label>Buscar:
+                      <input type="search" class="form-control input-sm" placeholder="" aria-controls="listadoDeGrupos">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <table id="listadoDeGrupos" class="table table-bordered table-hover dataTable no-footer" width="100%" role="grid" aria-describedby="listadoDeGrupos_info" style="width: 100%;">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting_asc" tabindex="0" aria-controls="listadoDeGrupos" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Nombre: activate to sort column descending" style="width: 493px;">Nombre</th>
+                        <th class="acciones3 sorting" tabindex="0" aria-controls="listadoDeGrupos" rowspan="1" colspan="1" aria-label="Acciones: activate to sort column ascending" style="width: 80px;">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd">
+                        <td class="sorting_1"><a href="/index.php?controller=empresas&amp;action=listar&amp;grupo=21" class="link-row">GRUPO DE EMPRESAS</a>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="glyphicon glyphicon-cog"></span> Opciones <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" id="21" title="Grupo de empresas" class="editar"><span class="glyphicon glyphicon glyphicon-pencil"></span> Editar</a>
+                              </li>
+                              <li><a href="#" id="21" title="Grupo de empresas" class="eliminar"><span class="glyphicon glyphicon-remove"></span> Eliminar</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr role="row" class="even">
+                        <td class="sorting_1"><a href="/index.php?controller=empresas&amp;action=listar&amp;grupo=31" class="link-row">PRUEBA USUARIO JUAN TAMARIZ</a>
+                        </td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="glyphicon glyphicon-cog"></span> Opciones <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" id="31" title="Prueba Usuario Juan Tamariz" class="editar"><span class="glyphicon glyphicon glyphicon-pencil"></span> Editar</a>
+                              </li>
+                              <li><a href="#" id="31" title="Prueba Usuario Juan Tamariz" class="eliminar"><span class="glyphicon glyphicon-remove"></span> Eliminar</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div id="listadoDeGrupos_processing" class="dataTables_processing" style="display: none;">
+                    <p class="cargando">
+                      <img src="/webroot/images/ajax48.gif" alt="cargando"> <span>Cargando...</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <div class="dataTables_info" id="listadoDeGrupos_info" role="status" aria-live="polite">Nº de registros: 2</div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="dataTables_paginate paging_simple_numbers" id="listadoDeGrupos_paginate">
+                    <ul class="pagination">
+                      <li class="paginate_button previous disabled" id="listadoDeGrupos_previous"><a href="#" aria-controls="listadoDeGrupos" data-dt-idx="0" tabindex="0">Anterior</a>
+                      </li>
+                      <li class="paginate_button active"><a href="#" aria-controls="listadoDeGrupos" data-dt-idx="1" tabindex="0">1</a>
+                      </li>
+                      <li class="paginate_button next disabled" id="listadoDeGrupos_next"><a href="#" aria-controls="listadoDeGrupos" data-dt-idx="2" tabindex="0">Siguiente</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </section>
+    </div>
+
+    <!-- ventana modal -->
+    <div class="modal fade" id="nombreGrupo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">Editar nombre del grupo</h4>
+          </div>
+          <div class="modal-body">
+
+            <p>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" class="form-control">
+              <input type="hidden" name="id" id="id">
+            </p>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary guardar pull-left">
+              Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="pull-right hidden-xs">
+        Manhattan [Versión en desarrollo]
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright © 2015 <a href="http://www.lealtadis.es">Lealtadis</a>.</strong>
+    </footer>
+
+  </div>
+  <!-- ./wrapper -->
+
+
+
+</body>
+
+</html>

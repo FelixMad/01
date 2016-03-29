@@ -1,0 +1,31 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-csslint": "^0.2.2",
+    "gulp-git": "^1.7.0",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-live-server": "^0.0.29",
+    "gulp-sass": "^2.2.0",
+    "install": "^0.6.1",
+    "npm": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixMad/01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelixMad/01/issues"
+  },
+  "homepage": "https://github.com/FelixMad/01#readme",
+  "description": ""
+}
