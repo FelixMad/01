@@ -1,0 +1,25 @@
+{
+  "name": "ejercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-inline-css": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp-csslint": "^0.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixMad/ejercicios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FelixMad/ejercicios/issues"
+  },
+  "homepage": "https://github.com/FelixMad/ejercicios#readme"
+}

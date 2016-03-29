@@ -1,0 +1,109 @@
+.login-page
+{
+    padding: 0;
+}
+
+.login-box
+{
+    padding: 0;
+}
+
+.login-box-body
+{
+    padding: 0;
+}
+
+.login-logo
+{
+    padding: 0;
+}
+
+.login-box-msg
+{
+    padding: 0;
+}
+
+.main-header
+{
+    padding: 0;
+}
+
+.login-page .login-box
+{
+    padding: 0;
+}
+
+.login-page .login-box .login-logo
+{
+    padding: 0;
+}
+
+.login-page .login-box .login-logo a
+{
+    padding: 0;
+}
+
+.login-page .login-box .login-logo a b
+{
+    color: blue;
+}
+
+.login-page .login-box-body
+{
+    padding: 0;
+}
+
+.login-page .login-box-body .login-box-msg
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form
+{
+    padding: 0;
+}
+
+.login-page .login-box-body .login-box-msg + form
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .form-group
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .form-group + .form-group
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .form-group input
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .form-group .glyphicon
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .form-group input + .glyphicon
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .row
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .row .col-xs-4
+{
+    padding: 0;
+}
+
+.login-page .login-box-body form .row .col-xs-4 [type='submit']
+{
+    padding: 0;
+}
