@@ -1,5 +1,5 @@
 'use strict';
-var gulp      = require('gulp'),
+var gulp       = require('gulp'),
 	 gls       = require('gulp-live-server'),
 	 inlineCss = require('gulp-inline-css'),
 	 sass      = require('gulp-sass'),
@@ -34,7 +34,6 @@ gulp.task('css:watch', function(){
 	gulp.watch( $src +'/scss/*.scss' ,['sass']);
   	gulp.watch( $src + '/css/*.css' ,['csslint']);  
 });
-
 
 gulp.task('csslint', function() {
 	gulp.src($src + '/css/*.css')
