@@ -11,14 +11,8 @@
     "gulp-sass": "^2.2.0",
     "install": "^0.6.1",
     "npm": "^3.8.3"
-  "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-git": "^1.7.0",
-    "gulp-inline-css": "^3.1.0",
-    "gulp-live-server": "^0.0.29",
-    "gulp-sass": "^2.2.0"
   },
+  "description": "Repositorio de ejemplo para experimentar",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,12 +21,10 @@
     "type": "git",
     "url": "git+https://github.com/FelixMad/01.git"
   },
-  "author": "",
+  "author": "FelixMad",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FelixMad/01/issues"
   },
-  "homepage": "https://github.com/FelixMad/01#readme",
-  "description": ""
   "homepage": "https://github.com/FelixMad/01#readme"
 }
