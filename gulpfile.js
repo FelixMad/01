@@ -54,7 +54,8 @@ gulp.task('sass:watch', function(){
 gulp.task('html', function() {
 	return gulp.src( $src + '/*.html')
 		.pipe(prettify({indent_char: '  ', indent_size: 1}))
-        .pipe(htmlhint())
+		.pipe(htmlhint())
+        .pipe(htmlhint.failReporter())
 		.pipe(gulp.dest($build))
 });
 
@@ -71,6 +72,7 @@ gulp.task('htmlprettify', function() {
 gulp.task('htmlhint', function() {
 	gulp.src($src + '/*.html')
 		.pipe(htmlhint())
+        .pipe(htmlhint.failReporter())
 });
 
 gulp.task('server', function() {
