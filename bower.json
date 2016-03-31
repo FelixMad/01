@@ -1,0 +1,25 @@
+{
+  "name": "01",
+  "description": "Repositorio de ejemplo para experimentar",
+  "main": "gulpfile.js",
+  "authors": [
+    "FelixMad"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/FelixMad/01",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git#^4.5.0",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2",
+    "polymer": "Polymer/polymer#^1.4.0"
+  }
+}
