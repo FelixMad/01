@@ -21,5 +21,8 @@
     "bootstrap": "^3.3.6",
     "jquery": "^2.2.2",
     "polymer": "Polymer/polymer#^1.4.0"
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3"
   }
 }
