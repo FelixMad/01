@@ -1,15 +1,15 @@
 'use strict';
-var gulp       = require('gulp'),
-	 gls       = require('gulp-live-server'),
-	 inlineCss = require('gulp-inline-css'),
-	 sass      = require('gulp-sass'),
-	 csslint   = require('gulp-csslint'),
-     htmlhint  = require("gulp-htmlhint"),
-	 prettify  = require('gulp-html-prettify'),
-	 git       = require('gulp-git'),
-	 $build    = "build",
-	 $src      = "source",
-	 $port     = 3006;
+var  gulp         = require('gulp'),
+	 gls         = require('gulp-live-server'),
+	 inlineCss   = require('gulp-inline-css'),
+	 sass        = require('gulp-sass'),
+	 csslint     = require('gulp-csslint'),
+     htmlhint    = require("gulp-htmlhint"),
+	 prettify    = require('gulp-html-prettify'),
+     gulpBrowser = require("gulp-browser"),
+	 $build      = "build",
+	 $src        = "source",
+	 $port       = 3006;
 
 
 gulp.task('default',function(){
@@ -17,6 +17,13 @@ gulp.task('default',function(){
 	gulp.watch( $src + '/scss/*.scss',['sass']);
 	gulp.watch( $src + '/*.html',['html']);
 });
+
+gulp.task('gulpBrowserTest',function() {
+    return gulp.src($build + '/js/main.js')
+        .pipe(gulpBrowser.browserify())
+        .pipe(gulp.dest($src + '/js/main.js'));
+});
+
 
 gulp.task('css', function() {
     gulp.src($src +'/scss/*.scss')
